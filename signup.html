@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div class="s6">
+            <div>
+                <h1 class="s5">Sign up</h1>
+            </div>
+            <div>
+                <input type="text" placeholder="First Name" class="s3" id="firstname" pattern="[A-Za-z0-9]" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Last Name" class="s3" id="lastname" pattern="[A-Za-z0-9]" required>
+            </div>
+            <div >
+                <select class="s3" name="Gender" id="gender" required>
+                    <option value="Gender">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <textarea placeholder="Addres" class="s3" id="address" pattern="[A-Za-z0-9]" required></textarea >
+            </div>
+            <div>
+                <input type="tel" placeholder="Mobile Number" class="s3" id="mobile" pattern="[0-9]" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" class="s3" id="email" pattern="email"  required>
+            </div>
+            <div>
+                <input type="password" placeholder="Password" class="s3" id="password" required>
+            </div>
+            <div>
+                <button class="s4" onclick="call()">Submit</button>
+            </div>
+            <div id="loader"></div>
+        </div>
+        <script src="./dist/app.js"></script>
+    </body>
+</html>
